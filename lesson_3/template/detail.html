@@ -1,0 +1,11 @@
+<!-- detail.html -->
+<body>
+    <img src="{{ product.image.url }}"/><br>
+    Model: {{ product.model }}<br>
+    Price: {{ product.price }}<br>
+    Make: {{ product.make }}<br>
+    Category: {{ product.category.name }}<br>
+    Body: {{ product.body }}<hr/>
+    
+    <a href="{% url 'get_info' %}" >home</a><br>
+</body>

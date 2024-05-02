@@ -1,0 +1,16 @@
+<title>Maxsulotlar</title>
+
+
+<body>
+    {% for product in products %}
+    <img src="{{ product.image.url }}" ><br>
+    Brend: {{ product.brend }}<br>
+    Color: {{ product.color }}<br>
+    Razmer: {{ product.razmer }}
+    <hr>
+{% endfor %}
+
+<a href="{% url 'get_info' %}">Home</a><br>
+
+      
+</body>
